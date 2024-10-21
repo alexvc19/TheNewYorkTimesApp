@@ -21,4 +21,9 @@ class LMPEmailArticlesRouter: UIViewController {
         }
         self.mainView = view
     }
+    func navToArticleDetail(article: Article){
+        let detailVC = MPArticleDetailRouter(article: article).viewController 
+        mainView?.navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
+  

@@ -8,8 +8,8 @@
 import UIKit
 import RxSwift
 class LMPEmailArticlesVC: UIViewController {
-    @IBOutlet weak private var tableView: UITableView!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
     private var router = LMPEmailArticlesRouter()
     private var viewModel = LMPEmailArticlesViewModel()
     private var listOfArticles = [Article]()
@@ -29,7 +29,7 @@ class LMPEmailArticlesVC: UIViewController {
                 self.listOfArticles = listOfArticles
                 self.reloadTable()
             } onError: { error in
-                
+                self.showError(message: error.localizedDescription)
             }.disposed(by: disposeBag)
     }
     private func reloadTable() {
@@ -43,6 +43,11 @@ class LMPEmailArticlesVC: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(UINib(nibName: "LMPEmailArticleCell", bundle: nil), forCellReuseIdentifier: "LMPEmailArticleCell")
     }
+    func showError(message: String) {
+        let alert = UIAlertController(title: "Ups!", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
 }
 extension LMPEmailArticlesVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,5 +60,10 @@ extension LMPEmailArticlesVC: UITableViewDelegate, UITableViewDataSource {
         cell.lblAuthor.text = self.listOfArticles[indexPath.row].byline
         cell.lblPublishedDate.text = self.listOfArticles[indexPath.row].publishedDate
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectArticle = listOfArticles[indexPath.row]
+        print(selectArticle)
+        viewModel.goToDetailView(article: selectArticle)
     }
 }

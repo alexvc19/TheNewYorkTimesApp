@@ -19,4 +19,7 @@ class LMPEmailArticlesViewModel {
     func getLMPEmailArticles() -> Observable<[Article]>{
         return manager.getMPEmailArticles()
     }
+    func goToDetailView(article: Article) {
+        router?.navToArticleDetail(article: article)
+    }
 }

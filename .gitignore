@@ -6,3 +6,15 @@ Icon\r
 ._*
 .Spotlight-V100
 .Trashes
+# CocoaPods
+Pods/
+Podfile.lock
+# Exclude xcuserdata (user-specific settings)
+xcuserdata/
+# Exclude build products
+DerivedData/
+build/
+# Exclude temporary and log files
+*.swp
+*.xcscmblueprint
+

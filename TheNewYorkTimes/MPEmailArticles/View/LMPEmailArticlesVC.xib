@@ -28,7 +28,7 @@
                         <outlet property="delegate" destination="-1" id="O66-qo-NSU"/>
                     </connections>
                 </tableView>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Osl-As-Uc8">
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Osl-As-Uc8">
                     <rect key="frame" x="186" y="429" width="20" height="20"/>
                     <color key="color" systemColor="systemOrangeColor"/>
                 </activityIndicatorView>

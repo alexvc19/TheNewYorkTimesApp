@@ -12,7 +12,7 @@
 		AFBCE4002CC1F5D900A93C32 /* ManagerConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCE3FF2CC1F5D900A93C32 /* ManagerConnections.swift */; };
 		AFD984B92CC1D90D005BD6E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD984B82CC1D90D005BD6E2 /* AppDelegate.swift */; };
 		AFD984BB2CC1D90D005BD6E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD984BA2CC1D90D005BD6E2 /* SceneDelegate.swift */; };
-		AFD984C32CC1D90D005BD6E2 /* TheNewYorkTimes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFD984C12CC1D90D005BD6E2 /* TheNewYorkTimes.xcdatamodeld */; };
+		AFD984C32CC1D90D005BD6E2 /* ListArticles.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFD984C12CC1D90D005BD6E2 /* ListArticles.xcdatamodeld */; };
 		AFD984C52CC1D912005BD6E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD984C42CC1D912005BD6E2 /* Assets.xcassets */; };
 		AFD984C82CC1D912005BD6E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD984C62CC1D912005BD6E2 /* LaunchScreen.storyboard */; };
 		AFD984D32CC1D913005BD6E2 /* TheNewYorkTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD984D22CC1D913005BD6E2 /* TheNewYorkTimesTests.swift */; };
@@ -26,6 +26,12 @@
 		AFD984FE2CC1E7FB005BD6E2 /* LMPEmailArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD984FC2CC1E7FB005BD6E2 /* LMPEmailArticleCell.swift */; };
 		AFD984FF2CC1E7FB005BD6E2 /* LMPEmailArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD984FD2CC1E7FB005BD6E2 /* LMPEmailArticleCell.xib */; };
 		AFD985022CC1E85E005BD6E2 /* ConstantsURLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD985012CC1E85E005BD6E2 /* ConstantsURLS.swift */; };
+		AFF895EB2CC319EA00E01BFF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF895EA2CC319EA00E01BFF /* Extension.swift */; };
+		AFF895EE2CC3261500E01BFF /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF895ED2CC3261500E01BFF /* CoreDataManager.swift */; };
+		BC22B3682CC2DCE700E371FF /* MPArticleDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC22B3662CC2DCE700E371FF /* MPArticleDetailVC.swift */; };
+		BC22B3692CC2DCE700E371FF /* MPArticleDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC22B3672CC2DCE700E371FF /* MPArticleDetailVC.xib */; };
+		BC22B36D2CC2E23700E371FF /* MPArticleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC22B36C2CC2E23700E371FF /* MPArticleDetailViewModel.swift */; };
+		BC22B3702CC2E3E500E371FF /* MPArticleDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC22B36F2CC2E3E500E371FF /* MPArticleDetailRouter.swift */; };
 		D7973D55424AAB0DE73EAE60 /* Pods_TheNewYorkTimes_TheNewYorkTimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A015B88DCC36D67AF7E6A06A /* Pods_TheNewYorkTimes_TheNewYorkTimesUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +81,12 @@
 		AFD984FC2CC1E7FB005BD6E2 /* LMPEmailArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMPEmailArticleCell.swift; sourceTree = "<group>"; };
 		AFD984FD2CC1E7FB005BD6E2 /* LMPEmailArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LMPEmailArticleCell.xib; sourceTree = "<group>"; };
 		AFD985012CC1E85E005BD6E2 /* ConstantsURLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsURLS.swift; sourceTree = "<group>"; };
+		AFF895EA2CC319EA00E01BFF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		AFF895ED2CC3261500E01BFF /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		BC22B3662CC2DCE700E371FF /* MPArticleDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPArticleDetailVC.swift; sourceTree = "<group>"; };
+		BC22B3672CC2DCE700E371FF /* MPArticleDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MPArticleDetailVC.xib; sourceTree = "<group>"; };
+		BC22B36C2CC2E23700E371FF /* MPArticleDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPArticleDetailViewModel.swift; sourceTree = "<group>"; };
+		BC22B36F2CC2E3E500E371FF /* MPArticleDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPArticleDetailRouter.swift; sourceTree = "<group>"; };
 		F337B06BFA0A28094188210F /* Pods-TheNewYorkTimes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheNewYorkTimes.debug.xcconfig"; path = "Target Support Files/Pods-TheNewYorkTimes/Pods-TheNewYorkTimes.debug.xcconfig"; sourceTree = "<group>"; };
 		FEE4A727ADFD89FA4D41711A /* Pods-TheNewYorkTimes-TheNewYorkTimesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheNewYorkTimes-TheNewYorkTimesUITests.debug.xcconfig"; path = "Target Support Files/Pods-TheNewYorkTimes-TheNewYorkTimesUITests/Pods-TheNewYorkTimes-TheNewYorkTimesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,15 +157,17 @@
 		AFD984B72CC1D90D005BD6E2 /* TheNewYorkTimes */ = {
 			isa = PBXGroup;
 			children = (
+				AFF895EC2CC325EE00E01BFF /* CoreData */,
 				AFD985032CC1E898005BD6E2 /* Network */,
 				AFD985002CC1E82B005BD6E2 /* Resources */,
-				AFD984F02CC1DBDD005BD6E2 /* LMPEmailArticles */,
+				AFD984F02CC1DBDD005BD6E2 /* MPEmailArticles */,
+				BC22B3642CC2DC9400E371FF /* MPArticleDetail */,
 				AFD984B82CC1D90D005BD6E2 /* AppDelegate.swift */,
 				AFD984BA2CC1D90D005BD6E2 /* SceneDelegate.swift */,
 				AFD984C42CC1D912005BD6E2 /* Assets.xcassets */,
 				AFD984C62CC1D912005BD6E2 /* LaunchScreen.storyboard */,
 				AFD984C92CC1D912005BD6E2 /* Info.plist */,
-				AFD984C12CC1D90D005BD6E2 /* TheNewYorkTimes.xcdatamodeld */,
+				AFD984C12CC1D90D005BD6E2 /* ListArticles.xcdatamodeld */,
 			);
 			path = TheNewYorkTimes;
 			sourceTree = "<group>";
@@ -201,7 +215,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		AFD984F02CC1DBDD005BD6E2 /* LMPEmailArticles */ = {
+		AFD984F02CC1DBDD005BD6E2 /* MPEmailArticles */ = {
 			isa = PBXGroup;
 			children = (
 				AFD984F52CC1DD26005BD6E2 /* Router */,
@@ -209,7 +223,7 @@
 				AFD984EC2CC1D96A005BD6E2 /* ViewModel */,
 				AFD984EB2CC1D953005BD6E2 /* Model */,
 			);
-			path = LMPEmailArticles;
+			path = MPEmailArticles;
 			sourceTree = "<group>";
 		};
 		AFD984F52CC1DD26005BD6E2 /* Router */ = {
@@ -233,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				AFD985012CC1E85E005BD6E2 /* ConstantsURLS.swift */,
+				AFF895EA2CC319EA00E01BFF /* Extension.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -243,6 +258,57 @@
 				AFBCE3FF2CC1F5D900A93C32 /* ManagerConnections.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		AFF895EC2CC325EE00E01BFF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AFF895ED2CC3261500E01BFF /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		BC22B3642CC2DC9400E371FF /* MPArticleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BC22B36E2CC2E3C900E371FF /* Router */,
+				BC22B36B2CC2DCFD00E371FF /* Model */,
+				BC22B36A2CC2DCF200E371FF /* ViewModel */,
+				BC22B3652CC2DCC700E371FF /* View */,
+			);
+			path = MPArticleDetail;
+			sourceTree = "<group>";
+		};
+		BC22B3652CC2DCC700E371FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC22B3662CC2DCE700E371FF /* MPArticleDetailVC.swift */,
+				BC22B3672CC2DCE700E371FF /* MPArticleDetailVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC22B36A2CC2DCF200E371FF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC22B36C2CC2E23700E371FF /* MPArticleDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC22B36B2CC2DCFD00E371FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC22B36E2CC2E3C900E371FF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BC22B36F2CC2E3E500E371FF /* MPArticleDetailRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		EE37B6BA9F426C034DFF7E8E /* Frameworks */ = {
@@ -367,6 +433,7 @@
 				AFD984C82CC1D912005BD6E2 /* LaunchScreen.storyboard in Resources */,
 				AFD984FF2CC1E7FB005BD6E2 /* LMPEmailArticleCell.xib in Resources */,
 				AFD984F42CC1DD16005BD6E2 /* LMPEmailArticlesVC.xib in Resources */,
+				BC22B3692CC2DCE700E371FF /* MPArticleDetailVC.xib in Resources */,
 				AFD984C52CC1D912005BD6E2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,13 +565,18 @@
 				AFD985022CC1E85E005BD6E2 /* ConstantsURLS.swift in Sources */,
 				AFD984B92CC1D90D005BD6E2 /* AppDelegate.swift in Sources */,
 				AFD984FE2CC1E7FB005BD6E2 /* LMPEmailArticleCell.swift in Sources */,
-				AFD984C32CC1D90D005BD6E2 /* TheNewYorkTimes.xcdatamodeld in Sources */,
+				AFD984C32CC1D90D005BD6E2 /* ListArticles.xcdatamodeld in Sources */,
 				AFD984F72CC1DDA6005BD6E2 /* LMPEmailArticlesRouter.swift in Sources */,
+				BC22B36D2CC2E23700E371FF /* MPArticleDetailViewModel.swift in Sources */,
 				AFD984BB2CC1D90D005BD6E2 /* SceneDelegate.swift in Sources */,
 				AFD984EF2CC1DA67005BD6E2 /* MostPopularEmailedArticles.swift in Sources */,
 				AFD984FA2CC1DFDE005BD6E2 /* LMPEmailArticlesViewModel.swift in Sources */,
+				AFF895EE2CC3261500E01BFF /* CoreDataManager.swift in Sources */,
+				AFF895EB2CC319EA00E01BFF /* Extension.swift in Sources */,
+				BC22B3682CC2DCE700E371FF /* MPArticleDetailVC.swift in Sources */,
 				AFBCE4002CC1F5D900A93C32 /* ManagerConnections.swift in Sources */,
 				AFD984F32CC1DD16005BD6E2 /* LMPEmailArticlesVC.swift in Sources */,
+				BC22B3702CC2E3E500E371FF /* MPArticleDetailRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -844,13 +916,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		AFD984C12CC1D90D005BD6E2 /* TheNewYorkTimes.xcdatamodeld */ = {
+		AFD984C12CC1D90D005BD6E2 /* ListArticles.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				AFD984C22CC1D90D005BD6E2 /* TheNewYorkTimes.xcdatamodel */,
 			);
 			currentVersion = AFD984C22CC1D90D005BD6E2 /* TheNewYorkTimes.xcdatamodel */;
-			path = TheNewYorkTimes.xcdatamodeld;
+			path = ListArticles.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
